@@ -1,21 +1,40 @@
 /* Estilos Globais */
 body {
-    background-color: #f4f4f4;
+    /* background-color: #fff !important; */
+    background-color: #1e1e1e !important; 
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    padding: 0;
+    margin: 0  !important;
+    padding: 0 !important;
 }
+
+
 
 /* Navbar */
 .navbar {
-    transition: all 0.3s ease-in-out;
-    background: rgba(0, 0, 0, 0.8);
+    background: #1e1e1e !important;
     padding: 15px 20px;
+    height: 100px;
+    display: flex;
+    align-items: center; /* Mantém os itens alinhados verticalmente */
+    justify-content: space-between; /* Espaço entre os itens */
+}
+
+.navbar-nav {
+   padding-right: 150px !important;
+}
+
+
+.navbar-brand img {
+    max-height: 100px; /* Define a altura máxima da logo */
+    width: auto; /* Mantém a proporção da imagem */
+    object-fit: contain; /* Garante que a imagem não se expanda */
 }
 
 .navbar a {
     color: white !important;
     font-weight: bold;
+    font-family: 'Orbitron';
+    font-size: 15px;
 }
 
 .navbar a:hover {
@@ -43,97 +62,28 @@ body {
 /* Custom Properties (Variables) */
 :root {
     --white-color: #ffffff;
-    --primary-color: #E76F51;
-    --secondary-color: #E9C46A;
-    --custom-btn-bg-color: #F4A261;
-    --custom-btn-bg-hover-color: #E76F51;
+    --primary-color: #002539;  /* Azul vibrante */
+    --secondary-color: #00B4D8; /* Azul claro */
+    --custom-btn-bg-color: #008fbf; /* Azul médio */
+    --custom-btn-bg-hover-color: #023E8A; /* Azul escuro */
     --dark-color: #000000;
     --p-color: #717275;
-    --link-hover-color: #E76F51;
+    --link-hover-color: #005F73; /* Azul esverdeado profundo */
     --body-font-family: 'Unbounded', sans-serif;
 }
 
+
 /* General Styles */
-body {
-    background-color: var(--white-color);
-    font-family: var(--body-font-family); 
+.text-home{
+color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 600;
-    color: var(--dark-color);
+.sub-title-header-home{
+    font-size: 25px !important; /* Um pouco menor que o título */
+    color: #d1d1d1; /* Cinza claro para leitura confortável */
+    text-align: right; /* Centraliza o subtítulo */
 }
 
-h1 { font-size: 42px; font-weight: 700; }
-h2 { font-size: 36px; font-weight: 700; }
-h6 { color: var(--secondary-color); font-size: 20px; }
-
-p {
-    color: var(--p-color);
-    font-size: 16px;
-}
-
-/* Hero Section */
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 80px 0;
-    background: linear-gradient(135deg, var(--primary-color), var(--custom-btn-bg-color));
-    color: var(--white-color);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero-section::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(-45deg, var(--primary-color) 30%, var(--custom-btn-bg-color) 70%);
-    z-index: -1;
-}
-
-.hero-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-/* Featured Section */
-.featured-section {
-    background-color: var(--custom-btn-bg-color);
-    padding: 50px 0;
-}
-
-.avatar-group img {
-    border: 4px solid var(--white-color);
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
-    margin-right: -10px;
-}
-
-.reviews-group strong {
-    font-size: 28px;
-    margin-right: 10px;
-}
-
-/* Book Section */
-.book-section-info {
-    padding-top: 40px;
-    padding-right: 40px;
-    padding-left: 40px;
-}
-
-.book-section img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
 
 /* Custom Button */
 .custom-btn {
@@ -150,4 +100,96 @@ p {
 .custom-btn:hover {
     background: var(--custom-btn-bg-hover-color);
     color: var(--white-color);
+}
+
+.title-header-home{
+    text-align: right; /* Centraliza o subtítulo */
+}
+
+
+.header-carousel {
+    border: 5px solid #1e1e1e; /* Define a cor e espessura da borda */
+    border-radius: 10px; /* Arredonda as bordas (opcional) */
+    padding: 10px; /* Adiciona um pequeno espaço interno */
+    background-color: #d3d3d3; /* Garante que o fundo fique uniforme */
+}
+
+.header-carousel .owl-nav {
+    position: absolute;
+    width: 200px;
+    height: 45px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-carousel .owl-nav .owl-prev,
+.header-carousel .owl-nav .owl-next {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 45px;
+    font-size: 22px;
+    transition: .5s;
+}
+
+.header-carousel .owl-nav .owl-prev:hover,
+.header-carousel .owl-nav .owl-next:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+.header-carousel .owl-dots {
+    position: absolute;
+    height: 45px;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-carousel .owl-dot {
+    position: relative;
+    display: inline-block;
+    margin: 0 5px;
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    transition: .5s;
+}
+
+.header-carousel .owl-dot::after {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 5px;
+    top: 4px;
+    left: 4px;
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+
+.header-carousel .owl-dot.active {
+    background: var(--primary);
+    border-color: var(--primary);
+}
+
+@media (max-width: 991.98px) {
+    .flex-column-reverse {
+        flex-direction: column-reverse !important;
+    }
+}
+.hero-image-container .owl-carousel {
+    margin-top: 0 !important;
 }
