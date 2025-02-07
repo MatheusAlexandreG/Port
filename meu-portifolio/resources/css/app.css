@@ -76,13 +76,9 @@ body {
 /* General Styles */
 .text-home{
 color: #fff;
+text-align: right;
 }
 
-.sub-title-header-home{
-    font-size: 25px !important; /* Um pouco menor que o título */
-    color: #d1d1d1; /* Cinza claro para leitura confortável */
-    text-align: right; /* Centraliza o subtítulo */
-}
 
 
 /* Custom Button */
@@ -103,7 +99,18 @@ color: #fff;
 }
 
 .title-header-home{
+    font-size: 45px !important;
     text-align: right; /* Centraliza o subtítulo */
+    font-weight: bold;
+    font-family: 'Orbitron';
+}
+
+.sub-title-header-home{
+    font-size: 25px !important; /* Um pouco menor que o título */
+    color: #ffffff; /* Cinza claro para leitura confortável */
+    text-align: right; /* Centraliza o subtítulo */
+    font-weight: bold;
+    font-family: 'Orbitron';
 }
 
 
@@ -111,7 +118,7 @@ color: #fff;
     border: 5px solid #1e1e1e; /* Define a cor e espessura da borda */
     border-radius: 10px; /* Arredonda as bordas (opcional) */
     padding: 10px; /* Adiciona um pequeno espaço interno */
-    background-color: #d3d3d3; /* Garante que o fundo fique uniforme */
+    background-color: #1e1e1e; /* Garante que o fundo fique uniforme */
 }
 
 .header-carousel .owl-nav {
@@ -193,3 +200,4 @@ color: #fff;
 .hero-image-container .owl-carousel {
     margin-top: 0 !important;
 }
+

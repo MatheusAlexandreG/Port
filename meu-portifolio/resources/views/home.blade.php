@@ -23,7 +23,7 @@
         <div class="col-lg-6 hero-image-container">
             <div class="owl-carousel header-carousel">
                 <div class="owl-carousel-item position-relative">
-                    <img class="img-fluid" src="images/1.png" alt="">
+                    <img class="img-fluid" src="images/4.png" alt="">
                     <div class="owl-carousel-text">
                         <h1 class="display-1 text-white mb-0"></h1>
                     </div>
