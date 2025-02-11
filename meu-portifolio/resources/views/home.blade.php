@@ -10,14 +10,10 @@
             <h2 class="sub-title-header-home mb-3">
                 Impacto Visual Que Vai Além da Estética.
             </h2>
-            <p class="text-home">
-                Criamos experiências digitais que combinam design inovador e tecnologia de ponta. 
-                Do conceito à execução, transformamos ideias em interfaces funcionais, responsivas e 
-                visualmente impactantes. Se você busca um design que impressiona e gera resultados, 
-                está no lugar certo.
-            </p>
             <div class="d-flex justify-content-end">
-                <a href="#section_2" class="btn custom-btn smoothscroll me-3">Discover More</a>
+                <div class="button">
+                    <a href="#">Solicite um Orçamento!</a>
+                </div>
             </div>
         </div>
         <div class="col-lg-6 hero-image-container">

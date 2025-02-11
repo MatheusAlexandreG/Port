@@ -60,7 +60,9 @@
             </div>
     
             <!-- Botão à direita -->
-            <a href="" class="btn btn-primary">Get Started</a>
+            <div class="button">
+                    <a href="#">HOVER & CLICK ME!</a>
+                </div>
     
             <!-- Botão Hamburguer (Visível apenas em telas pequenas) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
@@ -75,10 +77,6 @@
         {{ $slot }}
     </main>
 
-    {{-- Link fixo no canto inferior esquerdo --}}
-    <div class="link-area">
-        <a href="#" target="_blank">Click for More</a>
-    </div>
 
     {{-- jQuery (necessário para Owl Carousel e Bootstrap) --}}
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
