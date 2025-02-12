@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
-    
+
     {{-- Bibliotecas adicionais --}}
     <link href="lib/animate/animate.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
@@ -58,19 +58,19 @@
                     </li>
                 </ul>
             </div>
-    
+
             <!-- Botão à direita -->
             <div class="button">
-                    <a href="#">HOVER & CLICK ME!</a>
+                    <a href="#">Fale conosco</a>
                 </div>
-    
+
             <!-- Botão Hamburguer (Visível apenas em telas pequenas) -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
     </nav>
-    
+
 
     {{-- Conteúdo Dinâmico das Páginas --}}
     <main class="container mt-5 pt-5">
